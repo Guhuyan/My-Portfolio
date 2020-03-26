@@ -109,6 +109,7 @@ p {
   text-align: center;
   background: url(../images/pw_maze_black_2X.png) left top repeat;
   padding: 280px 0;
+  height: 100vh;
 }
 .logo {
   width: 130px;
