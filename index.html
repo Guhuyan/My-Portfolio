@@ -64,7 +64,7 @@
       <!--header-start-->
       <div class="container">
         <figure class="logo animated fadeInDown delay-07s">
-          <a href="#"><img src="assets/images/logo.png" alt="Logo"/></a>
+          <a href="#"><img src="assets/images/logo.png" alt="Logo" /></a>
         </figure>
         <h1 class="animated fadeInDown delay-07s">Hello, I'm Gue H. Yang</h1>
         <ul class="we-create animated fadeInUp delay-1s">
@@ -103,7 +103,14 @@
       <div class="container">
         <h2>About Me</h2>
         <h6>
-          Recent graduate from the University of California Coding Bootcamp.
+          Web Development Professional with real-world production experience and
+          Bootcamp training. My work and training have helped me to become
+          skilled at choosing the technology stack and approach that best suits
+          the particular problem and the goals of the project. I am
+          laser-focused on doing high-quality work and continually learning and
+          applying new technologies when appropriate. I strive to consistently
+          exceed expectations by taking the initiative, acting with integrity,
+          and aspiring to greatness.
         </h6>
         <div class="row">
           <div class="col-lg-4 col-sm-6 wow fadeInLeft delay-05s">
@@ -252,7 +259,7 @@
               </div>
             </div>
           </div>
-          <figure class="col-lg-8 col-sm-6  text-right wow fadeInUp delay-02s">
+          <figure class="col-lg-8 col-sm-6 text-right wow fadeInUp delay-02s">
             <!-- <img src="assets/images/ucd-badge.png" alt="" /> -->
             <a
               href="https://ucdavis.credly.com/member-badges/23072303"
@@ -342,7 +349,7 @@
         </div>
       </div>
       <div class="portfolioContainer wow fadeInUp delay-04s">
-        <div class=" Portfolio-box webdesign">
+        <div class="Portfolio-box webdesign">
           <a href="https://guhuyan.github.io/Word-Guess-Game/"
             ><img src="assets/images/Portfolio-pic1.jpg" alt=""
           /></a>
@@ -356,28 +363,28 @@
           <h3>Game Database</h3>
           <p>Web Design</p>
         </div>
-        <div class=" Portfolio-box webdesign">
+        <div class="Portfolio-box webdesign">
           <a href="https://guhuyan.github.io/TriviaGame/"
             ><img src="assets/images/Portfolio-pic3.jpg" alt=""
           /></a>
           <h3>jQuery Quiz Game</h3>
           <p>Web Design</p>
         </div>
-        <div class=" Portfolio-box webdesign">
+        <div class="Portfolio-box webdesign">
           <a href="https://guhuyan.github.io/GifTastic/"
             ><img src="assets/images/Portfolio-pic4.jpg" alt=""
           /></a>
           <h3>Jiphy Clone</h3>
           <p>Web Design</p>
         </div>
-        <div class=" Portfolio-box webdesign">
+        <div class="Portfolio-box webdesign">
           <a href="https://guhuyan.github.io/Train-Time/"
             ><img src="assets/images/Portfolio-pic5.jpg" alt=""
           /></a>
           <h3>Firebase Train Time</h3>
           <p>Web Design</p>
         </div>
-        <div class=" Portfolio-box webdesign">
+        <div class="Portfolio-box webdesign">
           <a href="https://tranquil-wave-24974.herokuapp.com"
             ><img src="assets/images/Portfolio-pic6.jpg" alt=""
           /></a>
@@ -594,16 +601,16 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-logo">
-          <a href="#"><img src="assets/images/footer-logo.png" alt=""/></a>
+          <a href="#"><img src="assets/images/footer-logo.png" alt="" /></a>
         </div>
         <span class="copyright">&copy; All Rights Reserved</span>
       </div>
     </footer>
 
     <script type="text/javascript">
-      $(document).ready(function(e) {
+      $(document).ready(function (e) {
         $("#test").scrollToFixed();
-        $(".res-nav_click").click(function() {
+        $(".res-nav_click").click(function () {
           $(".main-nav").slideToggle();
           return false;
         });
@@ -613,21 +620,21 @@
     <script>
       wow = new WOW({
         animateClass: "animated",
-        offset: 100
+        offset: 100,
       });
       wow.init();
     </script>
 
     <script type="text/javascript">
-      $(window).load(function() {
-        $(".main-nav li a, .servicelink").bind("click", function(event) {
+      $(window).load(function () {
+        $(".main-nav li a, .servicelink").bind("click", function (event) {
           var $anchor = $(this);
 
           $("html, body")
             .stop()
             .animate(
               {
-                scrollTop: $($anchor.attr("href")).offset().top - 102
+                scrollTop: $($anchor.attr("href")).offset().top - 102,
               },
               1500,
               "easeInOutExpo"
@@ -647,7 +654,7 @@
     </script>
 
     <script type="text/javascript">
-      $(window).load(function() {
+      $(window).load(function () {
         var $container = $(".portfolioContainer"),
           $body = $("body"),
           colW = 375,
@@ -657,12 +664,12 @@
           // disable window resizing
           resizable: true,
           masonry: {
-            columnWidth: colW
-          }
+            columnWidth: colW,
+          },
         });
 
         $(window)
-          .smartresize(function() {
+          .smartresize(function () {
             // check if columns has changed
             var currentColumns = Math.floor(($body.width() - 30) / colW);
             if (currentColumns !== columns) {
@@ -673,13 +680,13 @@
             }
           })
           .smartresize(); // trigger resize to set container width
-        $(".portfolioFilter a").click(function() {
+        $(".portfolioFilter a").click(function () {
           $(".portfolioFilter .current").removeClass("current");
           $(this).addClass("current");
 
           var selector = $(this).attr("data-filter");
           $container.isotope({
-            filter: selector
+            filter: selector,
           });
           return false;
         });
